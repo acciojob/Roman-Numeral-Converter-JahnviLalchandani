@@ -16,8 +16,8 @@ function convertToRoman(num) {
     };
 
   let result="";
-	for(let i=0;i<obj.length;i++){
-		while(num>obj[i][1]){
+	for(let i=0;i<13;i++){
+		while(num>=obj[i][1]){
 			result+=obj[i][0];
 			num-=obj[i][1];
 		}
